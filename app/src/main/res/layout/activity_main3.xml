@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elmaghraby.appplace.Main3Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/img"
+            />
+
+        <TextView
+            android:id="@+id/txt_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the rate"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="number"
+            android:textSize="40sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="العنوان"
+            android:textSize="40sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rate the place"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <RatingBar
+             android:id="@+id/ratingBar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:numStars="5"
+             android:stepSize="1"
+             android:layout_weight="4"
+                    />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="التفاصيل"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_txt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your comment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="add comment"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            />
+    
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>
